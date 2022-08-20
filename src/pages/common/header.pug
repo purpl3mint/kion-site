@@ -1,0 +1,14 @@
+header.header 
+    .wrapper 
+        a(href='#')
+            img.header__logo(src='./img/header_logo.png' alt="KION Logo")
+        nav.header__nav 
+            ul.header__nav-items 
+                each val in ['Product', 'Resources', 'Support', 'About']
+                    li.header__nav-item 
+                        a(href='#')= val
+        .header__search 
+            img.header__search-plug(src='./img/header_serach_plug.png' alt="Search plug :^)")
+        .header__demo
+            button.btn.header__demo-btn
+            |   Schedule Demo
