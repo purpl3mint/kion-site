@@ -1,0 +1,73 @@
+{
+  "name": "kion-site",
+  "version": "1.0.0",
+  "description": "This is Kion site, made with HTML+CSS+JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp start",
+    "serve": "gulp serve",
+    "lighthouse": "gulp lighthouse",
+    "test": "npm run stylelint-fix && eslint ./src/js/** --fix",
+    "stylelint-fix": "stylelint ./src/styles/**/*.scss --fix --syntax scss",
+    "eslint-fix": "eslint ./src/js/** --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purpl3mint/kion-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/purpl3mint/kion-site/issues"
+  },
+  "homepage": "https://github.com/purpl3mint/kion-site#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "browser-sync": "^2.27.10",
+    "chrome-launcher": "^0.15.1",
+    "critical": "^4.0.1",
+    "del": "^7.0.0",
+    "editorconfig-cli": "^0.3.0",
+    "eslint": "^8.20.0",
+    "eslint-config-htmlacademy": "^6.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-html-bem-validator": "^1.0.5",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-pug-linter": "^1.5.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-w3c-html-validator": "^5.1.3",
+    "gulp-webp": "^4.0.1",
+    "node-sass": "^7.0.1",
+    "pug": "^3.0.2",
+    "sass": "^1.54.0",
+    "stylelint-config-htmlacademy": "^0.1.12",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-scss": "^4.3.0"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "http2": "^3.3.7",
+    "normalize.css": "^8.0.1"
+  },
+  "types": "./types.d.ts",
+  "type": "module"
+}

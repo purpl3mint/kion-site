@@ -1,0 +1,29 @@
+@import "../utils/variables";
+
+@mixin media-mobile-small {
+
+  @media screen and (max-width: $mediaWidthMobileBig - 1px) {
+    @content;
+  }
+}
+
+@mixin media-mobile-big {
+
+  @media screen and (min-width: $mediaWidthMobileBig) and (max-width: $mediaWidthTabletSmall - 1px) {
+    @content;
+  }
+}
+
+@mixin media-tablet-small {
+
+  @media screen and (min-width: $mediaWidthTabletSmall) and (max-width: $mediaWidthTabletBig - 1px) {
+    @content;
+  }
+}
+
+@mixin media-tablet-big {
+
+  @media screen and (min-width: $mediaWidthTabletBig) and (max-width: $mediaWidthLaptop - 1px) {
+    @content;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin roboto-normal($fontSize, $lineHeight){
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}

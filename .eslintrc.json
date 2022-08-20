@@ -1,0 +1,24 @@
+{
+    "env": {
+        "es2020": true
+    },
+    "overrides": [
+        {
+            "files": ["src/**/*.js"],
+            "rules": {
+                "indent": [
+                    "error",
+                    4
+                ],
+                "semi": [
+                    "error",
+                    "never"
+                ],
+                "quotes": [
+                    "error",
+                    "backtick"
+                ]
+            }
+        }
+    ]
+}

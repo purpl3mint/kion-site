@@ -1,0 +1,23 @@
+doctype html
+html(lang="ru")
+    block head
+        head 
+            meta(charset="utf-8")
+            title My Site 
+            meta(content="width=device-width, initial-scale=1" name="viewport")
+            meta(content="ie=edge" http-equiv="x-ua-compatible")
+            meta(content="My Site" name="description")
+            link(rel="preconnect" href="https://fonts.googleapis.com")
+            link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+            link(rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap")
+            link(rel="stylesheet" media="screen" href="./css/normalize.min.css")
+            link(rel="stylesheet" media="screen" href="./css/style.min.css")
+            link(rel="icon" href="favicon.ico")
+    body
+        block header
+            include header 
+        block content 
+        block footer 
+            include footer 
+        block scripts
+            script(src="./js/main.min.js" async)
